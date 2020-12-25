@@ -1,0 +1,42 @@
+# site settings #
+title: 1С:ДОАМ
+description: > # title on the main link
+  ДОАМ /
+  Документооборот 8
+url: 'https://kc-doam.github.io' # the base hostname & protocol for your site, e.g. https://example.com
+baseurl: '/manual' # the subpath of your site, e.g. /blog
+lang: ru
+
+# remote method #
+remote_theme: rundocs/jekyll-rtd-theme
+
+## folders sort
+readme_index:
+  with_frontmatter: true
+
+### optional tags
+meta:
+  1C:Enterprise: 8.3.17.1851
+  1C:DocumentFlow: 2.1.10.2
+  1C:ExtensionDOAM: 1.06.3
+
+translate:
+  ## shortcodes
+  danger: Конфликт
+  note: Заметка
+  tip: Совет
+  warning: Важно
+  ## 404
+  not_found: Документ не найден
+  ## copyright
+  revision: Last Commit
+  ## search
+  searching: Идёт поиск
+  search: Поиск
+  search_docs: Поиск по документам
+  search_results: Результаты поиска
+  search_results_found: По вашему запросу найдено # документ(ов).
+  search_results_not_found: По вашему запросу не найдено ни одного документа!
+
+plugins:
+  - jekyll-remote-theme
