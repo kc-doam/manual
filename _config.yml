@@ -18,7 +18,7 @@ readme_index:
 meta:
   1C:Enterprise: 8.3.17.1851
   1C:DocumentFlow: 2.1.10.2
-  1C:ExtensionDOAM: 1.06.3
+  1C:ExtensionDOAM: 1.6.3
 
 translate:
   ## shortcodes
@@ -29,14 +29,14 @@ translate:
   ## 404
   not_found: Документ не найден
   ## copyright
-  revision: Last Commit
+  revision: 
   ## search
   searching: Идёт поиск
   search: Поиск
   search_docs: Поиск по документам
   search_results: Результаты поиска
-  search_results_found: По вашему запросу найдено # документ(ов).
-  search_results_not_found: По вашему запросу не найдено ни одного документа!
+  search_results_found: Найдено \# документ(ов).
+  search_results_not_found: Не найдено ни одного документа!
 
 plugins:
   - jekyll-remote-theme
