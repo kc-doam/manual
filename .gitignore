@@ -1,32 +1,37 @@
-# Jekyll
-.jekyll-metadata
-_site
+####################
+## Project dependencies
+####################
+
+# Jekyll: remote theme
+_layouts/
+_includes/
+_sass/
+assets/
+
+# Jekyll: bundler
+_site/
 .sass-cache
 .jekyll-cache
+.jekyll-metadata
 
-# Bundler
-*.gem
+# library or gem
 .ruby-version
 .ruby-gemset
 Gemfile.lock
+*.gem
 
-#############
+####################
 ## Windows detritus
-#############
+####################
 
 # Windows image file caches
-Thumbs.db
-ehthumbs.db
+*[Tt]humbs.db
 
 # Folder config file
 [Dd]esktop.ini
 
 # Recycle Bin used on file shares
-$RECYCLE.BIN/
-$Recycle.Bin/
-
-# Windows Installer files
-*.msi
+$R[Ee][Cc][Yy][Cc][Ll][Ee].B[I][N]/
 
 # Windows shortcuts
 *.lnk

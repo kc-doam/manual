@@ -20,10 +20,10 @@ graph LR
   %% https://fontawesome.ru/all-icons/
   b1([fa:fa-external-link Конфигуратор]) -.-> |ЛКМ| m1
   m1(fa:fa-caret-down Конфигурация) --> m2
-  m2(Открыть конфигурацию) -.-> |ЛКМ| e00
-  e00[fa:fa-window-restore Расш...]
+  m2(Открыть конфигурацию) -.-> |ЛКМ| e10
+  e10[fa:fa-window-restore Расш...]
   style b1 fill:#f9f9f9,stroke:#a0a0a0,stroke-width:2px
-  style e00 fill:#fff,stroke:#a0a0a0,stroke-width:2px,stroke-dasharray:2 4
+  style e10 fill:#fff,stroke:#a0a0a0,stroke-width:2px,stroke-dasharray:2 4
   classDef confmenu fill:#d6e9ff,stroke:#9eb6e9,stroke-width:1px,color:#3d4e8f
   class m1,m2 confmenu
 ```
@@ -37,21 +37,21 @@ graph LR
 ``` mermaid
 graph LR
   subgraph new[fa:fa-window-maximize Рабочая область начальной страницы]
-    i1[fa:fa-pencil-square-o Шаблон начальной страницы] -.-> e2 & e3 & e4
-    e2[Одна колонка]
-    e3[Две колонки одинаковой ширины]
-    e4["Две колонки разной ширины (2:1)"]
+    i1[fa:fa-pencil-square-o Шаблон начальной страницы] -.-> e30 & e40 & e50
+    e30[Одна колонка]
+    e40[Две колонки одинаковой ширины]
+    e50["Две колонки разной ширины (2:1)"]
   end
   subgraph main[" "]
-    e01[fa:fa-plus-square-o ДокументооборотКОРП] -- ПКМ --> m1
-    m1(Открыть рабочую область начальной страницы) -.-> |ЛКМ| e00
-    e00[fa:fa-window-maximize Рабоч...]
+    e10[fa:fa-plus-square-o ДокументооборотКОРП] -- ПКМ --> m1
+    m1(Открыть рабочую область начальной страницы) -.-> |ЛКМ| e20
+    e20[fa:fa-window-maximize Рабоч...]
   end
   style i1 fill:#fff,stroke:#000,stroke-width:2px
   style m1 fill:#d6e9ff,stroke:#9eb6e9,stroke-width:1px,color:#3d4e8f
   style main fill:none,stroke:none
   classDef element fill:#fff,stroke:#a0a0a0,stroke-width:2px,stroke-dasharray:2 4
-  class e00,e01,e02,e03,e04 element
+  class e10,e20,e30,e40,e50 element
 ```
 
 3. Открыть `РасширениеДОАМ` и установить `Шаблон начальной страницы` как в 
@@ -59,16 +59,16 @@ graph LR
 ``` mermaid
 graph LR
   m1(fa:fa-caret-down Конфигурация) --> m2
-  m2(Расширения конфигурации) -.-> |ЛКМ| e00
-  e00[fa:fa-window-restore Расш...]
-  e01[fa:fa-list-alt РасширениеДОАМ 1.6.3] -.-> m3
+  m2(Расширения конфигурации) -.-> |ЛКМ| e10
+  e10[fa:fa-window-restore Расширения конфигурации]
+  e20[fa:fa-list-alt РасширениеДОАМ 1.6.3] -.-> m3
   m3(fa:fa-caret-down Конфигурация) --> m4
-  m4(Открыть конфигурацию) -.-> |ЛКМ| e02
-  e02[fa:fa-plus-square-o РасширениеДОАМ]
+  m4(Открыть конфигурацию) -.-> |ЛКМ| e30
+  e30[fa:fa-plus-square-o РасширениеДОАМ]
   classDef confmenu fill:#d6e9ff,stroke:#9eb6e9,stroke-width:1px,color:#3d4e8f
   classDef element fill:#fff,stroke:#a0a0a0,stroke-width:2px,stroke-dasharray:2 4
   class m1,m2,m3,m4 confmenu
-  class e00,e01,e02 element
+  class e10,e20,e30 element
 ```  
 Установить `Шаблон начальной страницы` как указано в предыдущем пункте.  
 Далее нужно `Обновить конфигурацию базы данных` клавишей [`F7`](#{{ site.lang }}).

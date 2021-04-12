@@ -37,6 +37,3 @@ translate:
   search_results: Результаты поиска
   search_results_found: Найдено \# документ(ов).
   search_results_not_found: Не найдено ни одного документа!
-
-plugins:
-  - jekyll-remote-theme
