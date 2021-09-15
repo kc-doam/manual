@@ -5,7 +5,7 @@
 |Документооборот КОРП|2.1.10.2
 |Расширение ДОАМ|[1.2.1]
 
-[1.2.1]: //github.com/kc-doam/doam.cfe/tags
+[1.2.1]: //github.com/kc-doam/doam.cfe/releases
 
 ``` danger
 **2020-12-24**  
