@@ -22,16 +22,16 @@ graph LR
   %% https://fontawesome.ru/all-icons/
   b1([fa:fa-external-link Конфигуратор]) -.-> |ЛКМ| m1
   m1(fa:fa-caret-down Конфигурация) --> m2
-  m2(Открыть конфигурацию) -.-> |ЛКМ| e10
-  e10[fa:fa-window-restore Расш...]
+  m2(Открыть конфигурацию) -.-> |ЛКМ| element
+  element[fa:fa-window-restore Расш...]
   style b1 fill:#f9f9f9,stroke:#a0a0a0,stroke-width:2px
-  style e10 fill:#fff,stroke:#a0a0a0,stroke-width:2px,stroke-dasharray:2 4
+  style element fill:#fff,stroke:#a0a0a0,stroke-width:2px,stroke-dasharray:2 4
   classDef confmenu fill:#d6e9ff,stroke:#9eb6e9,stroke-width:1px,color:#3d4e8f
   class m1,m2 confmenu
 ```
 ``` tip
 Если `Конфигурация` открыта, показать окно можно горячими клавишами 
-[`Ctrl+Shift+C`](#{{ site.canonical_url }})
+[`Ctrl+Shift+C`](#{{ absolute_url }})
 ```
 
 2. Проверить настройки Начальной страницы `Конфигурации` в поле `Шаблон 
@@ -63,7 +63,7 @@ graph LR
   m1(fa:fa-caret-down Конфигурация) --> m2
   m2(Расширения конфигурации) -.-> |ЛКМ| e10
   e10[fa:fa-window-restore Расширения конфигурации]
-  e20[fa:fa-list-alt РасширениеДОАМ 1.6.3] -.-> m3
+  e20[fa:fa-list-alt РасширениеДОАМ 1.2.1] -.-> m3
   m3(fa:fa-caret-down Конфигурация) --> m4
   m4(Открыть конфигурацию) -.-> |ЛКМ| e30
   e30[fa:fa-plus-square-o РасширениеДОАМ]
@@ -73,5 +73,5 @@ graph LR
   class e10,e20,e30 element
 ```  
 Установить `Шаблон начальной страницы` как указано в предыдущем пункте.  
-Далее нужно `Обновить конфигурацию базы данных` клавишей [`F7`](#{{ site.baseurl }}).
+Далее нужно `Обновить конфигурацию базы данных` клавишей [`F7`](#{{ page.url }}).
 

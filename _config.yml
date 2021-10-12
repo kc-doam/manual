@@ -21,12 +21,15 @@ meta:
   1C:ExtensionDOAM: 1.2.1
 
 translate:
+  previous: Назад
+  next: Вперёд
   ## shortcodes
   danger: Конфликт
   note: Примечание
   tip: Совет
   warning: Вопрос
   ## 404
+  edit: Изменить на GitHub
   not_found: Документ не найден
   ## copyright
   revision: 
