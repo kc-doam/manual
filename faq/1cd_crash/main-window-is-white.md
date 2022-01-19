@@ -25,7 +25,7 @@ graph LR
   %% https://mermaid-js.github.io/mermaid-live-editor/
   %% https://fontawesome.ru/all-icons/
   b1([fa:fa-external-link Конфигуратор]) -.-> |ЛКМ| m1
-  m1("Конфигурация <b>[меню]</b>") --> m2
+  m1("Конфигурация [меню]") --> m2
   m2(Открыть конфигурацию) -.-> |ЛКМ| element
   element[fa:fa-window-restore Конфигурация]
   style b1 fill:#f9f9f9,stroke:#a0a0a0,stroke-width:2px
@@ -64,7 +64,7 @@ graph LR
 `Конфигурации`
 ``` mermaid
 graph LR
-  m1("Конфигурация <b>[меню]</b>") --> m2
+  m1("Конфигурация [меню]") --> m2
   m2(Расширения конфигурации) -.-> |ЛКМ| e10
   e10[fa:fa-window-restore Расширения конфигурации]
   e20[fa:fa-list-alt РасширениеДОАМ 1.x.x] -.-> m3
@@ -77,5 +77,5 @@ graph LR
   class e10,e20,e30 element
 ```  
 Установить `Шаблон начальной страницы` как указано в предыдущем пункте.  
-Далее нужно `Обновить конфигурацию базы данных` клавишей [`F7`](#{{ page.meta.1C:ExtensionDOAM }}).
+Далее нужно `Обновить конфигурацию базы данных` клавишей [`F7`](#{{ site.github.repository_url }}).
 

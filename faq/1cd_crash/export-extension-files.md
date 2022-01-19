@@ -23,7 +23,7 @@ graph LR
   %% https://mermaid-js.github.io/mermaid-live-editor/
   %% https://fontawesome.ru/all-icons/
   b1([fa:fa-external-link Конфигуратор]) -.-> |ЛКМ| m1
-  m1("Конфигурация <b>[меню]</b>") --> m2
+  m1("Конфигурация [меню]") --> m2
   m2(Открыть конфигурацию) -.-> |ЛКМ| element
   element[fa:fa-window-restore Конфигурация]
   style b1 fill:#f9f9f9,stroke:#a0a0a0,stroke-width:2px
@@ -33,7 +33,7 @@ graph LR
 ```
 ``` tip
 Если панель `Конфигурация` закрыта, то отобразить окно можно горячими клавишами 
-[`Ctrl+Shift+C`](#)
+[`Ctrl+Shift+C`](#{{ site.meta.1C:ExtensionDOAM }})
 ```
 
 2. Выбрать меню `Выгрузить конфигурацию в файлы` и указать путь `REPO\src\cfe`
@@ -41,7 +41,7 @@ graph LR
 graph LR
   %% https://mermaid-js.github.io/mermaid-live-editor/
   %% https://fontawesome.ru/all-icons/
-  m1("Конфигурация <b>[меню]</b>") --> m2
+  m1("Конфигурация [меню]") --> m2
   m2(Расширения конфигурации) -.-> |ЛКМ| m3
   m3(fa:fa-caret-down Конфигурация) --> m4
   m4(Выгрузить конфигурацию в файлы...) -.-> |ЛКМ| element

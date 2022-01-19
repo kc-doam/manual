@@ -25,7 +25,7 @@ sort: 3
 graph LR
   %% https://mermaid-js.github.io/mermaid-live-editor/
   %% https://fontawesome.ru/all-icons/
-  m1("fa:fa-caret-down Файл <b>[меню]</b>") --> m2
+  m1("fa:fa-caret-down Файл [меню]") --> m2
   m2(Сведения) --> |ПКМ| b1
   b1([fa:fa-pencil-square-o Все равно редактировать])
   style b1 fill:#f9f9f9,stroke:#a0a0a0,stroke-width:2px

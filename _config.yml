@@ -20,23 +20,30 @@ meta:
   1C:DocumentFlow: 2.1.29.17
   1C:ExtensionDOAM: 1.3.2
 
+script: # also '_includes/script.js'
+
 translate:
-  previous: Назад
-  next: Вперёд
+  previous: Предыдущая
+  next: Следующая
   ## shortcodes
   danger: Конфликт
   note: Примечание
   tip: Совет
   warning: Вопрос
   ## 404
-  edit: Изменить на GitHub
-  not_found: Документ не найден
+  edit: 'Изменить на GitHub'
+  not_found: 'Страница не найдена'
   ## copyright
   revision: 
   ## search
-  searching: Идёт поиск
-  search: Поиск
-  search_docs: Поиск по документам
-  search_results: Результаты поиска
-  search_results_found: Найдено \# документ(ов).
-  search_results_not_found: Не найдено ни одного документа!
+  searching: 'Идёт поиск'
+  search: 'Поиск'
+  search_docs: 'Сквозной поиск'
+  search_results: 'Результаты поиска'
+  search_results_found: 'Найдено # страниц'
+  search_results_not_found: >
+    По запросу не найдено ни одной страницы.
+    <ul>
+      <li>Сквозной поиск не чувствителен к регистру</li>
+      <li>Помните точную фразу - вводите целиком, иначе ищите часть фразы без окончания</li>
+    </ul>

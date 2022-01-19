@@ -11,10 +11,8 @@ sort: 4
 ``` danger
 **2022-01-17**  
 В Windows 10 при открытии файла Excel вместо данных приложение открывает пустое окно.  
-Проблема может возникать после [обновления Windows] (без уведомления пользователя).
+Проблема может возникать после [обновления Windows](//ru.wikipedia.org/wiki/WSUS) (без уведомления пользователя).
 ```
-
-[обновления Windows]: //ru.wikipedia.org/wiki/WSUS
 
 ## Разрешение конфликта
 
@@ -23,10 +21,12 @@ sort: 4
 graph LR
   %% https://mermaid-js.github.io/mermaid-live-editor/
   %% https://fontawesome.ru/all-icons/
-  m1("fa:fa-caret-down Файл <b>[меню]</b>") --> m2
+  m1("fa:fa-caret-down Файл [меню]") --> m2
   m2(Параметры) -.-> |ЛКМ| b1
-  b1("Дополнительно <b>#lbrack;раздел#rbrack;</b>") --> b2
-  b2("Общие <b>[группа]</b>")
+  b1("Дополнительно #lbrack;раздел#rbrack;") --> b2
+  b2("Общие [группа]") -.-> |ЛКМ| element
+  element[fa:fa-square-o Игнорировать DDE-запросы...]
+  style element fill:#fff,stroke:#a0a0a0,stroke-width:2px,stroke-dasharray:2 4
   classDef confmenu fill:#ecf9e7,stroke:#32ad15,stroke-width:1px,color:#23850f
   classDef section fill:#f9f9f9,stroke:#a0a0a0,stroke-width:2px
   class m1,m2 confmenu
