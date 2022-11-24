@@ -41,18 +41,27 @@ graph LR
 graph LR
   %% https://mermaid-js.github.io/mermaid-live-editor/
   %% https://fontawesome.ru/all-icons/
-  m1("Конфигурация [меню]") --> m2
-  m2(Расширения конфигурации) -.-> |ЛКМ| m3
-  m3(fa:fa-caret-down Конфигурация) --> m4
-  m4(Выгрузить конфигурацию в файлы...) -.-> |ЛКМ| element
+  m1("Конфигурация [меню]") --> |ЛКМ| m2
+  m2(Расширения конфигурации)
+  classDef confmenu fill:#d6e9ff,stroke:#9eb6e9,stroke-width:1px,color:#3d4e8f
+  class m1,m2 confmenu
+```
+``` mermaid
+graph LR
+  %% https://mermaid-js.github.io/mermaid-live-editor/
+  %% https://fontawesome.ru/all-icons/
+  m1(fa:fa-caret-down Действия) --> m2
+  m2(Конфигурация) --> m3
+  m3(Выгрузить конфигурацию в файлы...) -.-> |ЛКМ| element
   element[fa:fa-folder-open Выбрать] --> b1
   b1([Выполнить])
-  classDef button fill:#f9f9f9,stroke:#a0a0a0,stroke-width:2px
+  style b1 fill:#f9f9f9,stroke:#a0a0a0,stroke-width:2px
   style element fill:#fff,stroke:#a0a0a0,stroke-width:2px,stroke-dasharray:2 4
   classDef confmenu fill:#d6e9ff,stroke:#9eb6e9,stroke-width:1px,color:#3d4e8f
-  class m1,m2,m3,m4 confmenu
-  class b1 button
+  class m1,m2,m3 confmenu
 ```
+
+![Экспорт](images/export_cfe_2_0.png)
 
 3. В случае необходимости подтвердить действие
 
