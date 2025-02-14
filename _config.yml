@@ -8,7 +8,7 @@ baseurl: '/manual' # the subpath of your site, e.g. /blog
 lang: ru
 
 # remote method #
-remote_theme: rundocs/jekyll-rtd-theme
+remote_theme: jekyllrtdtheme/jekyll-rtd-theme
 
 ## folders sort
 readme_index:
@@ -16,9 +16,9 @@ readme_index:
 
 ### optional tags
 meta:
-  1C:Enterprise: 8.3.22.1704
+  1C:Enterprise: 8.3.24.1691
   1C:DocumentFlow: 2.1.29.17
-  1C:ExtensionDOAM: 1.4.1
+  1C:ExtensionDOAM: 2.0.0
 
 script: # also '_includes/script.js'
 

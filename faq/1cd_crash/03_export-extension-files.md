@@ -1,5 +1,5 @@
 ---
-sort: 2
+sort: 3
 ---
 
 # Экспорт файлов расширения ДОАМ
@@ -9,7 +9,7 @@ sort: 2
 |Документооборот КОРП|2.1.10.2
 |Расширение ДОАМ|[1.2.2]
 
-[1.2.2]: //github.com/kc-doam/doam.cfe/releases
+[1.2.2]: https://github.com/kc-doam/doam.cfe/releases
 
 ``` note
 Если конфигурация открыта, то пропустите пункт 1.
@@ -36,7 +36,7 @@ graph LR
 [`Ctrl+Shift+C`](#)
 ```
 
-2. Выбрать меню `Выгрузить конфигурацию в файлы` и указать путь `REPO\src\cfe`
+2. Выбрать меню панель управления `Расширения конфигурации`  
 ``` mermaid
 graph LR
   %% https://mermaid-js.github.io/mermaid-live-editor/
@@ -60,7 +60,7 @@ graph LR
   classDef confmenu fill:#d6e9ff,stroke:#9eb6e9,stroke-width:1px,color:#3d4e8f
   class m1,m2,m3 confmenu
 ```
-
+Выбрать меню `Выгрузить конфигурацию в файлы...` и указать путь `REPO\src\cfe`  
 ![Экспорт](images/export_cfe_2_0.png)
 
 3. В случае необходимости подтвердить действие

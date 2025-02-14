@@ -2,7 +2,10 @@
 sort: 2
 ---
 
-# Вопросы и решения
+## Вопросы и решения
 
 {% include list.liquid all=true %}
+
+
+Jekyll {{ jekyll.version }}
 
